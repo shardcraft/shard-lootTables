@@ -1,0 +1,24 @@
+{
+  "parent": "shard_core:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": "Off with their heads!",
+    "frame": "task",
+    "description": "Kill another player",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      }
+    }
+  }
+}
