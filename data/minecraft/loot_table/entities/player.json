@@ -1,20 +1,20 @@
 {
   "type": "minecraft:entity",
   "pools": [
-  	{
-  	  "rolls": 1,
-  	  "entries": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-  	  	  "type": "item",
-  	  	  "name": "minecraft:player_head",
-          "functions": [
+          "type": "minecraft:item",
+          "modifier": [
             {
-              "function": "fill_player_head",
-              "entity": "this"
+              "entity": "this",
+              "type": "minecraft:fill_player_head"
             }
-          ]
-  	    }
-  	  ]
-  	}
+          ],
+          "name": "minecraft:player_head"
+        }
+      ]
+    }
   ]
 }
